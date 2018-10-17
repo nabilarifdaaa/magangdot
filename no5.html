@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+	<header>
+		<div class="main">
+			<div class="title">
+				<h1>Tes Magang</h1>
+			</div>
+		</div>
+		<div class="button">
+			<a class="btn" id="tes1"></a>
+			<a class="btn" id="tes"></a>
+		</div>
+	</header>
+	<script>
+		var numberCollection=[4,5,1,7,9];
+		var maxDiff=getMaxDifference(numberCollection);
+
+		document.getElementById("tes1").innerHTML = "Array = "+numberCollection; 
+		document.getElementById("tes").innerHTML = "Perbedaan nilai = "+maxDiff; 
+		
+		function getMaxDifference(numberCollection){
+            var max = Math.max(...numberCollection)
+            var min = Math.min(...numberCollection)
+
+            return max - min
+        }
+	</script>
+</body>
+</html>

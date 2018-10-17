@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		var numberCollection=[4,5,1,7,9];
+		var maxDiff=getMaxDifference(numberCollection);
+
+		console.log(maxDiff);
+		function getMaxDifference(numberCollection){
+            var max = Math.max(...numberCollection)
+            var min = Math.min(...numberCollection)
+
+            return max - min
+        }
+	</script>
+</body>
+</html>
